@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
-    
+
+    <div class="row">
+    <div class="col-8">
     <div class="container">
         <div class="heading">
             This is the heading
@@ -27,6 +29,18 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laudantium inventore nostrum rem harum. At totam rerum, ullam nihil explicabo culpa aliquam, tempore enim quidem excepturi possimus neque, quasi labore!
                 </div>
     </div>
+</div>
+<div class="col-4">
+        <select id="leave" onchange="leaveChange(this)">
+                <option value="5">Get Married</option>
+                <option value="100">Have a Baby</option>
+                <option value="90">Adopt a Child</option>
+                <option value="15">Retire</option>
+                <option value="15">Military Leave</option>
+                <option value="15">Medical Leave</option>
+              </select>
+</div>
+</div>
 
 
 
@@ -53,5 +67,12 @@
 
 
   </style>
+
+  <script>
+        function leaveChange(control) {
+            var msg = control.value == "100" ? "Having a Baby!!" : "Common message";
+            console.log(msg)
+        }
+  </script>
 
 </html>
