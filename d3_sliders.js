@@ -5,7 +5,7 @@ var sliderSimple = d3
   .min(d3.min(data))
   .max(d3.max(data))
   .width(200)
-  .tickFormat(d3.format(''))
+  .tickFormat(d3.format('.2'))
   .ticks(5)
   .default(1)
   .on('onchange', val => {
